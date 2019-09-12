@@ -25,6 +25,7 @@ body {font-family: 'Open Sans', sans-serif;
 h1, h2 {
 	font-family: 'Caveat', cursive;
 	font weight: 400;
+	text-shadow: 5px 5px Black;
 }
 h1 {
 	font size: 80px;
@@ -32,9 +33,14 @@ h1 {
 h2 {
 	font size: 40px;
 	margin-top: 0;
+	text-shadow: 0px 5px #000000;
 }
+
 h3 {
 	margin: 0;
+	text-shadow: 5px 5px Black;
+	word-spacing: 0n;
+	text-decoration: underline;
 }
 a {
 	color:#EF233C;
@@ -170,3 +176,28 @@ h3 ~ p {
 p + h3 {
 	margin-top: 30px;
 }
+
+
+
+/*Media Queries
+----------------------*/
+@media (min-width: 900px) {
+.col-narrow {
+	width: 30%;
+	float: left;
+	
+	
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	
+}
+	@media (max-width: 899px) {
+		header {
+		text-align:center
+	}
+		.profile.img {
+			width: 200px;
+		}
