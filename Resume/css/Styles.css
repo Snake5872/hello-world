@@ -12,30 +12,30 @@
 ----------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 @charset "utf-8";
 /* CSS Document */
-body {font-family: 'Open Sans', sans-serif;
+body {
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 }
 h1, h2 {
 	font-family: 'Caveat', cursive;
-	font weight: 400;
+ font weight: 400;
 	text-shadow: 5px 5px Black;
 }
 h1 {
-	font size: 80px;
+ font size: 80px;
 }
 h2 {
-	font size: 40px;
+ font size: 40px;
 	margin-top: 0;
 	text-shadow: 0px 5px #000000;
 }
-
 h3 {
 	margin: 0;
 	text-shadow: 5px 5px Black;
@@ -43,10 +43,13 @@ h3 {
 	text-decoration: underline;
 }
 a {
-	color:#EF233C;
+	color: #EF233C;
 }
 a:hover {
 	text-decoration: none;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 .content-wrap {
 	max-width: 950px;
@@ -57,24 +60,18 @@ a:hover {
 .col-narrow {
 	width: 30%;
 	float: left;
-	
-	
 }
 .col-wide {
 	width: 70%;
 	float: left;
 	padding-left: 20px;
-	
-	
 }
-
 .uppercase {
 	text-transform: uppercase;
 }
 .btn {
 	text-decoration: none;
-	background:#EF233C 
-    color: white;
+ background:#EF233C  color: white;
 	padding: 10px;
 	display: inline-block;
 }
@@ -90,11 +87,9 @@ header {
 	position: relative;
 }
 .profile-img {
-	
 	border-radius: 50%;
 	margin-right: 30px;
 }
-
 header h1, header h2 {
 	color: #EDF2F4;
 	margin: 0;
@@ -103,33 +98,30 @@ header h1, header h2 {
 	border-radius: 50%;
 }
 .download {
-	position:absolute;
+	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 header {
-	text-align: center;
 }
-*/footer*/
-
-footer{
-	text-align: center
+*/footer*/  footer {
+ text-align: center
 }
 .contact-info a {
-	background: white;
+	background-color: #000000;
 	padding: 10px;
 	display: inline-block
 }
-
 /* Navigation
 ----------------------*/
 nav {
 	text-align: center;
-	background: white;
+	background-color: #B1AFAF;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	
+	color: #FFCDCE;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
 nav a {
 	display: inline-block;
@@ -137,14 +129,13 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 700;
+	color: #8E8484;
+	background-color: #946A6B;
 }
 /*Work Experience
 ----------------------*/
-<section class="work">
-<div class="content wrap">
-<h2> work experience </h2>
-.work {
-	background: #EDF2F4;
+<section class="work"> <div class="content wrap"> <h2> work experience </h2> .work {
+ background: #EDF2F4;
 }
 h3 ~ p {
 	margin: 0;
@@ -155,26 +146,27 @@ h3 ~ p {
 .job-description p:first-of-type {
 	margin-top: 0;
 }
-
 /*border box fix*/
-	html {
-		box-sizing: border-box;
-		}
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-
-
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 /*Education
 ----------------------*/
-	.education {
-		background: linear-gradient (rgba(141, 153, 174, 0.8),rgba (141, 153, 174, 0.5)),
-			url (../images/leaf.jpg) no-repeat fixed;
-		background-size: cover;
+.education {
+ background: linear-gradient (rgba(141, 153, 174, 0.8), rgba (141, 153, 174, 0.5)),  url (../images/leaf.jpg) no-repeat fixed;
+	background-size: cover;
 }
-		
+#nav {
+	color: #FFFFFF;
+}
+#nav {
+}
 p + h3 {
 	margin-top: 30px;
+	background-color: #FFFFFF;
 }
 
 
@@ -185,19 +177,16 @@ p + h3 {
 .col-narrow {
 	width: 30%;
 	float: left;
-	
-	
 }
 .col-wide {
 	width: 70%;
 	float: left;
 	padding-left: 20px;
-	
 }
-	@media (max-width: 899px) {
-		header {
-		text-align:center
-	}
-		.profile.img {
-			width: 200px;
-		}
+ @media (max-width: 899px) {
+ header {
+ text-align:center
+}
+ .profile.img {
+ width: 200px;
+}

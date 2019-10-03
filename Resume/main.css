@@ -1,0 +1,41 @@
+ #navbar {
+ width: 100%;
+ height: 60px;
+ background color:#fff;
+}
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: block;
+	line-height: 1;
+	display: block;
+}
+#nav a {
+ display: block;
+ width: 130px;
+}
+#nav li { /*all list items */
+	float: left;
+	width: 130px;
+	position: static;
+	display: inline;
+}
+ #nav li:hover ul { /* lists nested under hovered list items */
+	left: auto;
+	display: block;
+}
+#body div div div #navbar ul #nav li ul li {
+	display: inline;
+	position: absolute;
+}
+
+ #nav li ul li:hover {
+ background: #6CC;
+
+
+#nav ul li hover > ul {
+}
+#nav, #nav ul {
+}
+#nav li ul {
+}
